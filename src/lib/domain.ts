@@ -1,0 +1,2 @@
+export function emailDomain(email:string):string|null{const parts=email.trim().toLowerCase().split('@');if(parts.length!==2||!parts[0]||!/^[a-z0-9]+(?:[.-][a-z0-9]+)*\.[a-z]{2,}$/.test(parts[1]))return null;return parts[1];}
+export function isApprovedDomain(email:string,approved:readonly string[]):boolean{const domain=emailDomain(email);return domain!==null&&approved.some(item=>item.trim().toLowerCase()===domain);}

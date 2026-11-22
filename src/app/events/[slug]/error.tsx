@@ -1,0 +1,3 @@
+'use client';
+import Link from 'next/link';
+export default function EventError({reset}:{error:Error;reset:()=>void}){return <main className="mx-auto max-w-3xl px-6 py-20"><h1 className="text-4xl font-bold">Event unavailable</h1><p className="mt-4 text-[var(--muted)]">The event service could not respond. Please try again.</p><div className="mt-8 flex gap-4"><button onClick={reset} className="bg-[var(--accent)] px-5 py-3 font-bold text-[var(--background)]">Try again</button><Link href="/events" className="px-5 py-3">Back to events</Link></div></main>}
