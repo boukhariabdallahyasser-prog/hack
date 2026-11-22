@@ -1,0 +1,2 @@
+# Visual upgrade
+The homepage now uses an editorial green/charcoal identity, a responsive animated SVG network illustration, category links, live event summaries and clear availability states. No new frontend dependencies were introduced. The network is conceptual, not a visualization of actual students. Team formation and verification remain labeled in development. Reduced-motion preferences are honored. Netlify receives code through main; no private keys in Git.
